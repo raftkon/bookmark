@@ -8,14 +8,13 @@ import MenuItems from "./MenuItems";
 
 export default function Navbar() {
   const [clicked, setClicked] = useState(false);
-
   const handleClick = () => {
     setClicked((state) => !state);
   };
   return (
-    <header className="container relative mx-auto p-6">
+    <header className="container mx-auto p-6">
       {/* Flex container for nav items */}
-      <div className="flex items-center justify-between space-x-20 my-6">
+      <div className="flex items-center justify-between my-6">
         {/* Logo */}
         <div className="z-30">
           <Image
@@ -32,11 +31,9 @@ export default function Navbar() {
         {/* Menu items */}
         <MenuItems />
         {/* Hamburger button */}
-
         <HamburgerBtn clicked={clicked} handleClick={handleClick} />
       </div>
       {/* Mobile */}
-
       <MobileMenu clicked={clicked} />
     </header>
   );

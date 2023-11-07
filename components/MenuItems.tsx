@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { buttonVariants } from "./ui/button";
 
 export default function MenuItems() {
   return (
@@ -25,7 +26,9 @@ export default function MenuItems() {
 
       <Link
         href={"#"}
-        className="px-8 py-2 text-white bg-softRed transition border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:bg-white"
+        className={buttonVariants({
+          variant: "login",
+        })}
       >
         Login
       </Link>

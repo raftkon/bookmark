@@ -4,7 +4,7 @@ export const boxes = [
     text: "Add to Chrome",
     alt: "Google Chrome logo",
     details: "Minimum Version 62",
-    class: "",
+    class: "0",
     width: 102,
   },
   {
@@ -12,7 +12,7 @@ export const boxes = [
     text: "Add to Firefox",
     alt: "Mozilla Firefox logo",
     details: "Minimum Version 62",
-    class: "mt-8",
+    class: "32px",
     width: 105,
   },
   {
@@ -20,7 +20,7 @@ export const boxes = [
     text: "Add to Opera",
     alt: "Opera logo",
     details: "Minimum Version 62",
-    class: "mt-16",
+    class: "64px",
     width: 96,
   },
 ];

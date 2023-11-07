@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "./ui/button";
 type Panel = {
   url: string;
   title: string;
@@ -37,9 +38,12 @@ export default function TabItem({ panel, selected }: TabItemProps) {
           {panel.content}
         </p>
         <div className="mx-auto md:mx-0">
-          <button className="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2 transition">
+          <Button className=" p-6 mt-4  text-base bg-softBlue font-semibold border-white hover:border-softBlue border-2 hover:bg-white hover:text-softBlue transition">
             More info
-          </button>
+          </Button>
+          {/* <button className="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2 transition">
+            More info
+          </button> */}
         </div>
       </div>
     </div>

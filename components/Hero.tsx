@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "./ui/button";
 
 export default function Hero() {
   return (
@@ -18,12 +19,13 @@ export default function Hero() {
           </p>
           {/* Buttons container */}
           <div className="flex justify-center space-x-4 w-full lg:justify-start">
-            <button className="shadow-md font-semibold rounded border-softBlue border-2 text-sm p-5 text-white bg-softBlue hover:bg-white hover:text-softBlue transition md:text-base">
+            <Button className="shadow-md font-semibold border-softBlue border-2 bg-softBlue p-5 py-8 text-sm md:text-base hover:bg-white hover:text-softBlue transition">
               Get it on Chrome
-            </button>
-            <button className="shadow-md font-semibold rounded border-gray-300 border-2 text-sm p-5 md:text-base bg-gray-300 hover:text-gray-600 transition hover:bg-white">
+            </Button>
+
+            <Button className="shadow-md font-semibold border-gray-300 border-2 bg-gray-300 p-5 py-8 text-sm md:text-base text-black hover:text-gray-600 transition hover:bg-white">
               Get it on Firefox
-            </button>
+            </Button>
           </div>
         </div>
         {/* Image */}
