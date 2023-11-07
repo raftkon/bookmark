@@ -1,29 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
-const boxes = [
-  {
-    url: "/images/logo-chrome.svg",
-    text: "Add to Chrome",
-    alt: "Google Chrome logo",
-    details: "Minimum Version 62",
-    class: "",
-  },
-  {
-    url: "/images/logo-firefox.svg",
-    text: "Add to Firefox",
-    alt: "Mozilla Firefox logo",
-    details: "Minimum Version 62",
-    class: "mt-8",
-  },
-  {
-    url: "/images/logo-opera.svg",
-    text: "Add to Opera",
-    alt: "Opera logo",
-    details: "Minimum Version 62",
-    class: "mt-16",
-  },
-];
+import { boxes } from "@/data";
 
 export default function Download() {
   return (
@@ -50,7 +27,13 @@ export default function Download() {
               >
                 {/* Image */}
                 <div className="flex justify-center">
-                  <Image width={102} height={100} alt={box.alt} src={box.url} />
+                  <Image
+                    width={box.width}
+                    height={100}
+                    alt={box.alt}
+                    src={box.url}
+                    className="w-auto"
+                  />
                 </div>
                 <h5 className="text-xl font-bold pt-6">{box.text}</h5>
                 <p className="text-gray-400">{box.details}</p>

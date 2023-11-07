@@ -5,7 +5,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="py-16 bg-veryDarkBlue">
-      <div className="container flex flex-col items-center justify-between max-auto space-y-16 px-6 md:flex-row md:space-y-0">
+      <div className="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0">
         {/* Logo/Menu */}
         <div className="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-grayishBlue">
           <Image
@@ -42,7 +42,7 @@ export default function Footer() {
               alt="twitter logo"
               src={"/images/icon-twitter.svg"}
               width={24}
-              height={24}
+              height={20}
               className="ficon"
             />
           </Link>
